@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 16 Oct, 2021 8:18:40 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.voidmain.pojo.Job" table="JOB">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="increment" />
+        </id>
+        <property name="jobtitle" type="java.lang.String">
+            <column name="JOBTITLE" />
+        </property>
+        <property name="description" type="java.lang.String">
+            <column name="DESCRIPTION" />
+        </property>
+        <property name="idate" type="java.lang.String">
+            <column name="IDATE" />
+        </property>
+        <property name="salary" type="java.lang.String">
+            <column name="SALARY" />
+        </property>
+        <property name="worklocation" type="java.lang.String">
+            <column name="WORKLOCATION" />
+        </property>
+        <property name="minimumpercentage" type="java.lang.String">
+            <column name="MINIMUMPERCENTAGE" />
+        </property>
+        <property name="branches" type="java.lang.String">
+            <column name="BRANCHES" />
+        </property>
+        <property name="designation" type="java.lang.String">
+            <column name="DESIGNATION" />
+        </property>
+        <property name="companyid" type="java.lang.String">
+            <column name="COMPANYID" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory name="">
+  <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+  <property name="hibernate.connection.password">password</property>
+  <property name="hibernate.connection.url">jdbc:mysql://localhost:5252/campusplacementassistant</property>
+  <property name="hibernate.connection.username">root</property>
+  <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+  <property name="hibernate.hbm2ddl.auto">update</property>
+  <property name="show_sql">true</property>
+  <mapping class="com.voidmain.pojo.Comment" resource="com/voidmain/pojo/Comment.hbm.xml"/>
+  <mapping class="com.voidmain.pojo.Company" resource="com/voidmain/pojo/Company.hbm.xml"/>
+  <mapping class="com.voidmain.pojo.Job" resource="com/voidmain/pojo/Job.hbm.xml"/>
+  <mapping class="com.voidmain.pojo.Login" resource="com/voidmain/pojo/Login.hbm.xml"/>
+  <mapping class="com.voidmain.pojo.JobApplication" resource="com/voidmain/pojo/JobApplication.hbm.xml"/>
+  <mapping class="com.voidmain.pojo.Notification" resource="com/voidmain/pojo/Notification.hbm.xml"/>
+  <mapping class="com.voidmain.pojo.Question" resource="com/voidmain/pojo/Question.hbm.xml"/>
+  <mapping class="com.voidmain.pojo.Senior" resource="com/voidmain/pojo/Senior.hbm.xml"/>
+  <mapping class="com.voidmain.pojo.Student" resource="com/voidmain/pojo/Student.hbm.xml"/>
+ </session-factory>
+</hibernate-configuration>
