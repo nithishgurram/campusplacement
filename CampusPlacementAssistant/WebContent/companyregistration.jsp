@@ -20,7 +20,7 @@
 				<div id="logo_text">
 					<!-- class="logo_colour", allows you to change the colour of the text -->
 					<h1 style="text-align:center ">
-						<a href="#">STUDENT GUIDEFOR CAMPUS PLACEMENTS</a>
+						<a href="#"style="color:white"> KMIT CAMPUS PLACEMENTS</a>
 					</h1>
 				</div>
 			</div>
@@ -33,6 +33,7 @@
 					<li><a href="seniorregistration.jsp">Senior Registration</a></li>
 					<li><a href="companyregistration.jsp">Company Registration</a></li>
 					<li><a href="notification.jsp">Notification</a></li>
+					<li><a href="viewnotifications2.jsp">placed</a></li>
 					<li><a href="contact.jsp">contact us</a></li>
 
 				</ul>
@@ -75,15 +76,15 @@
 						</p>
 						<p>
 							<span>Password</span><input class="contact" type="password"
-								name="password" value="" required="required"/>
+								name="password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}" title="Minimum 8 characters,one Upper case,one lower case,one special character" value="" required="required"/>
 						</p>
 						<p>
 							<span>Email Address</span><input class="contact" type="email"
-								name="email" value="" required="required"/>
+								name="email" pattern="[a-z0-9](\.?[a-z0-9]){3,}@[Gg][Mm][Aa][Ii][Ll]\.com$" title="please enter a valid e-mail ex:ex12@gmail.com" value="" required="required"/>
 						</p>
 						<p>
 							<span>Mobile</span><input class="contact" type="text"
-								name="mobile" value="" required="required"/>
+								name="mobile" pattern="[6-9]\d{9}" title="please enter a valid Mobile Number"  value="" required="required"/>
 						</p>
 						<p>
 							<span>Address</span>

@@ -7,9 +7,11 @@ import com.voidmain.pojo.Comment;
 import com.voidmain.pojo.Company;
 import com.voidmain.pojo.Login;
 import com.voidmain.pojo.Notification;
+import com.voidmain.pojo.Notification2;
 import com.voidmain.pojo.Question;
 import com.voidmain.pojo.Student;
 import com.voidmain.pojo.JobApplication;
+import com.voidmain.pojo.JobApplication3;
 import com.voidmain.pojo.Senior;
 
 public class HibernateDAO {
@@ -198,6 +200,23 @@ public class HibernateDAO {
 	}
 
 	//================================================================================
+	public static Notification2 getNotification2ById(int id)
+	{
+		return (Notification2)HibernateTemplate.getObject(Notification2.class,id);
+	}
+
+	public static int deleteNotification2(int id)
+	{
+		return HibernateTemplate.deleteObject(Notification2.class,id);
+	}
+
+	public static List<Notification2> getNotifications2()
+	{
+		List<Notification2> notifications2=(List)HibernateTemplate.getObjectListByQuery("From Notification2");
+
+		return notifications2;
+	}
+	//================================================================================
 
 	public static Comment getCommentById(int id)
 	{
@@ -215,4 +234,26 @@ public class HibernateDAO {
 
 		return comments;
 	}
+
+
+//================================================================================
+
+public static JobApplication3 getJobApplication3ById(int id)
+{
+	return (JobApplication3)HibernateTemplate.getObject(JobApplication3.class,id);
 }
+
+public static int deleteJobApplication3(int id)
+{
+	return HibernateTemplate.deleteObject(JobApplication3.class,id);
+}
+
+public static List<JobApplication3> getJobApplications3()
+{
+	List<JobApplication3> jobApplications3=(List)HibernateTemplate.getObjectListByQuery("From JobApplication3");
+
+	return jobApplications3;
+}
+}
+
+

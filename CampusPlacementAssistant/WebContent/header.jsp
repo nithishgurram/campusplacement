@@ -20,7 +20,7 @@
 				<div id="logo_text">
 					<!-- class="logo_colour", allows you to change the colour of the text -->
 					<h1>
-						<a href="#">STUDENT GUIDE <span class="logo_colour">&nbsp;FOR CAMPUS PLACEMENTS</span></a>
+						<a href="#" style="color:white">KMIT CAMPUS PLACEMENTS</a>
 					</h1>
 				</div>
 			</div>
@@ -33,13 +33,16 @@
 
 						if (role.equals("student")) {
 					%>
+					        <li><a href="#"><%out.println(request.getSession().getAttribute( "username")); %></a><li>
 							<li><a href="updateprofile.jsp">Update Profile</a></li>
 							<li><a href="viewcompanys.jsp">Companies</a></li>
 							<li><a href="viewjobs.jsp">Jobs</a></li>
 							<li><a href="viewmyapplicationstatus.jsp">Applications</a></li>
 							<li><a href="viewnotifications.jsp">Notifications</a></li>
-							<li><a href="addquestion.jsp">Post Question</a></li>
-							<li><a href="viewquestions.jsp">Questions</a></li>
+							<li><a href="viewnotifications2.jsp">placed</a></li>
+							<li><a href="addquestion.jsp">Post Query</a></li>
+							<li><a href="viewquestions.jsp">FAQ's</a></li>
+							
 					<%
 						}
 					%>
@@ -47,10 +50,15 @@
 					<%
 						if (role.equals("admin")) {
 					%>
+							<li><a href="#"><%out.println(request.getSession().getAttribute( "username")); %></a><li>
 							<li><a href="addnotification.jsp">Send Notification</a></li>
-							<li><a href="viewnotifications.jsp">Notifications</a></li>
+							<li><a href="addnotification2.jsp">Update Placed Status</a></li>
+							<li><a href="viewnotifications2.jsp">placed</a></li>
+							<li><a href="viewnotifications.jsp">View Notifications</a></li>
+							
 							<li><a href="viewcompanys.jsp">Companies</a></li>
 							<li><a href="viewstudents.jsp">Students</a></li>
+							
 					<%
 						}
 					%>
@@ -58,9 +66,13 @@
 					<%
 						if (role.equals("company")) {
 					%>
+							<li><a href="#"><%out.println(request.getSession().getAttribute( "username")); %></a><li>
 							<li><a href="addjob.jsp">Post Job</a></li>
 							<li><a href="viewmyjobs.jsp">View Jobs</a></li>
 							<li><a href="viewapplications.jsp">Applications</a></li>
+							<li><a href="viewnotifications2.jsp">placed</a></li>
+							
+							
 					<%
 						}
 					%>
@@ -68,7 +80,10 @@
 					<%
 						if (role.equals("senior")) {
 					%>
-							<li><a href="viewquestions.jsp">Questions</a></li>
+							<li><a href="#"><%out.println(request.getSession().getAttribute( "username")); %></a><li>
+							<li><a href="viewquestions.jsp">FAQ's</a></li>
+							<li><a href="viewnotifications2.jsp">placed</a></li>
+							
 					<%
 						}
 					%>

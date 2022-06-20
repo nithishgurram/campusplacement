@@ -27,7 +27,9 @@
 				<th>ID</th>
 				<th>RNO</th>
 				<th>Job ID</th>
+				<th>GPA</th>
 				<th>Resume</th>
+				
 				<th>Status</th>
 				<th>Approve</th>
 				<th>Reject</th>
@@ -47,6 +49,8 @@
 									<td><%=jobApplication.getId()%></td>
 									<td><%=jobApplication.getRno()%></td>
 									<td><%=jobApplication.getJobid()%></td>
+									<td><%=student.getGpa()%></td>
+									
 									<td><a href="resumes/<%=student.getResume()%>" download>download resume</a></td>
 									<td><%=jobApplication.getStatus()%></td>
 									<td> <a href="viewapplications.jsp?id=<%=jobApplication.getId()%>&applicationstatus=yes">Approve</a></td>

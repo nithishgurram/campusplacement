@@ -63,7 +63,7 @@ public class VoidmainServlet extends HttpServlet {
 				{
 					if(HibernateTemplate.addObject(student)==1 && HibernateTemplate.addObject(login)==1)
 					{
-						response.sendRedirect("studentregistration.jsp?status=success");
+						response.sendRedirect("studentregistration.jsp?status=Successfully Registered");
 					}
 					else
 					{
@@ -97,7 +97,7 @@ public class VoidmainServlet extends HttpServlet {
 						{
 							if(HibernateTemplate.addObject(object)==1 && HibernateTemplate.addObject(login)==1)
 							{
-								response.sendRedirect(redirect+"?status=success");
+								response.sendRedirect(redirect+"?status=Successfully Registered");
 							}
 							else
 							{
@@ -125,7 +125,7 @@ public class VoidmainServlet extends HttpServlet {
 						
 						if(HibernateTemplate.addObject(object)==1)
 						{
-							response.sendRedirect(redirect+"?status=success");
+							response.sendRedirect(redirect+"?status=Successfully Registered");
 						}
 						else
 						{
@@ -139,7 +139,7 @@ public class VoidmainServlet extends HttpServlet {
 						{
 							if(HibernateTemplate.addObject(object)==1)
 							{
-								response.sendRedirect(redirect+"?status=success");
+								response.sendRedirect(redirect+"?status=Successfully Added");
 							}
 							else
 							{
@@ -150,7 +150,7 @@ public class VoidmainServlet extends HttpServlet {
 						{
 							if(HibernateTemplate.updateObject(object)==1)
 							{
-								response.sendRedirect(redirect+"?status=success");
+								response.sendRedirect(redirect+"?status=Successfully Updated");
 							}
 							else
 							{

@@ -52,7 +52,8 @@ table.center {
 					<li><a href="seniorregistration.jsp">Senior Registration</a></li>
 					<li><a href="companyregistration.jsp">Company Registration</a></li>
 					<li><a href="notification.jsp">Notification</a></li>
-					<li><a href="viewnotifications2.jsp">placed</a></li>
+					<li><a href="viewnotifications2.jsp">Placed</a></li>
+					
 					<li><a href="contact.jsp">contact us</a></li>
 
 				</ul>
@@ -65,56 +66,30 @@ table.center {
 <%@page import="com.voidmain.pojo.JobApplication"%>
 <%@page import="com.voidmain.pojo.Job"%>
 <%@page import="com.voidmain.pojo.Company"%>
+<%@page import="com.voidmain.pojo.Notification2"%>
 <%@page import="com.voidmain.dao.HibernateTemplate"%>
 <%@page import="com.voidmain.dao.HibernateDAO"%>
 <%@page import="java.util.List"%>
 
 	<div id="content">
 		<!-- insert the page content here -->
-
-		
-<%
-			String status = request.getParameter("status");
-				
-			if (status != null) {
-		%>
-		<h1><%=status%></h1>
-		<%
-			} else {
-		%>
-		<h1 style="text-align: right">Recent Job Notifications</h1>
-		<%
-			}
-		%>
-
-		<table class="center">
+<table style="width: 100%; border-spacing: 0;">
+<h1>Placed Students</h1>
 			<tr>
-				<th>ID</th>
-				<th>Title</th>
-				<th>Description</th>
-				<th>Interview Date</th>
-				<th>Salary</th>
-				<th>Work Location</th>
-				<th>Percentage Required</th>
-				<th>Branches can Apply</th>
-				<th>Job Role</th>
-				<th>Company ID</th>
+				<th>SNO</th>
+				<th>Company Name</th>
+				<th>Student Name</th>
+				<th>CTC</th>
 				
 			</tr>
 			<%
-				for (Job job : HibernateDAO.getJobs()) {
+				for (Notification2 notification : HibernateDAO.getNotifications2()) {
 			%>
 			<tr>
-				<td><%=job.getId()%></td>
-				<td><%=job.getJobtitle()%></td>
-				<td><%=job.getDescription()%></td>
-				<td><%=job.getIdate()%></td>
-				<td><%=job.getSalary()%></td>
-				<td><%=job.getWorklocation()%></td>
-				<td><%=job.getMinimumpercentage()%></td>
-				<td><%=job.getBranches()%></td>
-				<td><%=job.getDesignation()%></td>
-				<td><%=job.getCompanyid()%></td>
+				<td><%=notification.getId2()%></td>
+				<td><%=notification.getTitle2()%></td>
+				<td><%=notification.getDescription2()%></td>
+				<td><%=notification.getNdate2()%></td>
 				
 			</tr>
 
@@ -123,23 +98,7 @@ table.center {
 			%>
 		</table>
 		
-		<%
-			String id = request.getParameter("id");
-
-			if (id != null) {
-				
-				JobApplication jobApplication=new JobApplication();
-				jobApplication.setJobid(Integer.parseInt(id));
-				
-				jobApplication.setStatus("pending");
-				
-				if (HibernateTemplate.addObject(jobApplication) == 1) {
-					response.sendRedirect("viewjobs.jsp?status=success");
-				} else {
-					response.sendRedirect("viewjobs?status=failed");
-				}
-			}
-		%></div>
+		</div>
 			</div>
 		</div>
 	</div>

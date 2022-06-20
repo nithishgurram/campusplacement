@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.voidmain.pojo.JobApplication3" table="JOBAPPLICATION3">
+        <id name="id3" type="int">
+            <column name="ID3" />
+            <generator class="increment" />
+        </id>
+        <property name="rno3" type="java.lang.String">
+            <column name="RNO3" />
+        </property>
+        <property name="jobid3" type="int">
+            <column name="JOBID3" />
+        </property>
+        <property name="status3" type="java.lang.String">
+            <column name="STATUS3" />
+        </property>
+    </class>
+</hibernate-mapping>

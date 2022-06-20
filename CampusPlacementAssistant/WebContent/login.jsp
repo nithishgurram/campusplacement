@@ -18,7 +18,7 @@
 				<div id="logo_text">
 					<!-- class="logo_colour", allows you to change the colour of the text -->
 					<h1 style="text-align:center ">
-						<a href="#">STUDENT GUIDEFOR CAMPUS PLACEMENTS</a>
+						<a href="#" style="color:white">KMIT CAMPUS PLACEMENTS</a>
 					</h1>
 				</div>
 			</div>
@@ -31,6 +31,7 @@
 					<li><a href="seniorregistration.jsp">Senior Registration</a></li>
 					<li><a href="companyregistration.jsp">Company Registration</a></li>
 					<li><a href="notification.jsp">Notification</a></li>
+					<li><a href="viewnotifications2.jsp">placed</a></li>
 					<li><a href="contact.jsp">contact us</a></li>
 
 				</ul>
@@ -70,7 +71,7 @@
 						</p>
 						<p style="padding-top: 15px">
 							<span>&nbsp;</span><input class="submit" type="submit"
-								name="contact_submitted" value="Login" /><a href="forgotpassword.jsp">forgot password?</a>
+								name="contact_submitted" value="Login" />
 						</p>
 					</div>
 				</form>

@@ -40,7 +40,7 @@ table.center {
 				<div id="logo_text">
 					<!-- class="logo_colour", allows you to change the colour of the text -->
 					<h1 style="text-align:center ">
-						<a href="#">STUDENT GUIDEFOR CAMPUS PLACEMENTS</a>
+						<a href="#"style="color:white">  KMIT CAMPUS PLACEMENTS</a>
 					</h1>
 				</div>
 			</div>
@@ -53,6 +53,7 @@ table.center {
 					<li><a href="seniorregistration.jsp">Senior Registration</a></li>
 					<li><a href="companyregistration.jsp">Company Registration</a></li>
 					<li><a href="notification.jsp">Notification</a></li>
+					<li><a href="viewnotifications2.jsp">placed</a></li>
 					<li><a href="contact.jsp">contact us</a></li>
 
 				</ul>
@@ -71,7 +72,7 @@ table.center {
   </tr>
   <tr>
     <td>Mailid</td>
-    <td>tpo_kmit@gmmail.com</td>
+    <td>tpo_kmit@gmail.com</td>
     
   </tr>
   <tr>

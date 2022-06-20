@@ -10,7 +10,7 @@ body
 
  <!-- font: normal .80em 'trebuchet ms', arial, sans-serif; 
   
-  background: orange;
+  background-image: url("banner.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -26,8 +26,8 @@ img
 { border: 0;}
 
 h1, h2, h3, h4, h5, h6 
-{ font: normal 175% 'century gothic', arial, sans-serif;
-  color: #43423F;
+{ font: normal 175% 'century gothic', timesnewroman, sans-serif;
+  color: black;
   margin: 0 0 15px 0;
   padding: 5px 0 5px 0;}
 
@@ -168,7 +168,7 @@ ul#menu li a:hover
 { color: #ECEF01;}
 
 #site_content
-{ width: 1075spx;
+{ width: 1075px;
   overflow: hidden;
   margin: 44px auto 0 auto;
   padding: 10px 0 0 25px;

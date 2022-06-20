@@ -27,7 +27,7 @@
 				<th>ID</th>
 				<th>Title</th>
 				<th>Description</th>
-				<th>Date</th>
+				<!-- <th>Date</th> -->
 				<%
 					if(role.equals("admin"))
 					{
@@ -44,7 +44,7 @@
 				<td><%=notification.getId()%></td>
 				<td><%=notification.getTitle()%></td>
 				<td><%=notification.getDescription()%></td>
-				<td><%=notification.getNdate()%></td>
+				<%-- <td><%=notification.getNdate()%></td> --%>
 				<%
 					if(role.equals("admin"))
 					{

@@ -15,7 +15,10 @@
   <mapping class="com.voidmain.pojo.Job" resource="com/voidmain/pojo/Job.hbm.xml"/>
   <mapping class="com.voidmain.pojo.Login" resource="com/voidmain/pojo/Login.hbm.xml"/>
   <mapping class="com.voidmain.pojo.JobApplication" resource="com/voidmain/pojo/JobApplication.hbm.xml"/>
+  <mapping class="com.voidmain.pojo.JobApplication3" resource="com/voidmain/pojo/JobApplication3.hbm.xml"/>
+
   <mapping class="com.voidmain.pojo.Notification" resource="com/voidmain/pojo/Notification.hbm.xml"/>
+  <mapping class="com.voidmain.pojo.Notification2" resource="com/voidmain/pojo/Notification2.hbm.xml"/>
   <mapping class="com.voidmain.pojo.Question" resource="com/voidmain/pojo/Question.hbm.xml"/>
   <mapping class="com.voidmain.pojo.Senior" resource="com/voidmain/pojo/Senior.hbm.xml"/>
   <mapping class="com.voidmain.pojo.Student" resource="com/voidmain/pojo/Student.hbm.xml"/>
